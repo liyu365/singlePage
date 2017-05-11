@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>viewScroller</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <link rel="stylesheet" href="../normalize.css"/>
+    <link rel="stylesheet" href="../demo.css"/>
+    <script>
+        //防止浏览器不支持console报错
+        if (!window.console) {
+            window.console = {};
+            var funs = ["profiles", "memory", "_commandLineAPI", "debug", "error", "info", "log", "warn", "dir", "dirxml", "trace", "assert", "count", "markTimeline", "profile", "profileEnd", "time", "timeEnd", "timeStamp", "group", "groupCollapsed", "groupEnd"];
+            for (var i = 0; i < funs.length; i++) {
+                console[funs[i]] = function () {
+                };
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="J_singlepage_placeHolder"></div>
+<div id="headerW">
+    <div class="title">viewScroller&nbsp;<a href='https://github.com/liyu365'>By liyu365</a></div>
+    <div class="github_btn_w">
+        <a class="btn" href="https://github.com/liyu365/singlePage">View on GitHub</a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a class="btn" href="https://github.com/liyu365/singlePage/archive/master.zip">Download</a>
+    </div>
+</div>
+<div class="J_singlepage_pagination">
+    <a href="javascript:void(0);" data-hash="!/floor1" class="J_sp_btn"></a>
+    <a href="javascript:void(0);" data-hash="!/floor2" class="J_sp_btn"></a>
+    <a href="javascript:void(0);" data-hash="!/floor3" class="J_sp_btn"></a>
+</div>
+<div class="J_singlepage">
+    <div class="J_spSection_wrapper">
+
+        <div data-hash="!/floor1" class="floor1 J_spSection">
+            <div class="J_sp_inside">
+                <div id="a1">Hello!<br/>Everyone.</div>
+            </div>
+        </div>
+
+        <div data-hash="!/floor2" class="floor2 J_spSection">
+            <div class="J_sp_inside">
+                <div id="a2">This's<br/>a<br/>demo.</div>
+            </div>
+        </div>
+
+        <div data-hash="!/floor3" class="floor3 J_spSection">
+            <div class="J_sp_inside">
+                <div id="a3"><a href="https://github.com/liyu365/singlePage" class="btn">View on GitHub</a></div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="footerW">your page footer</div>
+
+
+
+<script src="../jquery.js"></script>
+<script src="../jquery.easing.js"></script>
+<script src="../singlePage.js"></script>
+<script>
+    new SinglePage({
+        changeHash: false,  //切换锚点
+        mode: 'scroll',
+        duration: 500,
+        easing: 'easeInOutCubic',
+        headerSelect: '#headerW',
+        footerSelect: '#footerW',
+        placeHolderSelect: '#J_singlepage_placeHolder'  //会给这个元素设置负边距，来隐藏或显示header或footer
+    });
+</script>
+</body>
+</html>
