@@ -2,7 +2,7 @@
 
 这是一个滑动单页面展示插件，依赖jQuery，支持IE6+。
  
-:point_right: [演示](http://liyu365.github.io/viewScroller/demo/)
+:point_right: [演示](https://liyu365.github.io/singlePage/demo/)
 
 ### 页面结构
 
