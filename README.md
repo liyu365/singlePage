@@ -7,14 +7,14 @@
 ### 页面结构
 
 ```html
-<div id="J_viewScroller_placeHolder"></div>
+<div id="J_singlepage_placeHolder"></div>
 <div id="headerW"></div>
-<div class="J_viewScroller_pagination">
+<div class="J_singlepage_pagination">
     <a href="javascript:void(0);" data-hash="!/floor1" class="J_sp_btn"></a>
     <a href="javascript:void(0);" data-hash="!/floor2" class="J_sp_btn"></a>
     <a href="javascript:void(0);" data-hash="!/floor3" class="J_sp_btn"></a>
 </div>
-<div class="J_viewScroller">
+<div class="J_singlepage">
     <div class="J_spSection_wrapper">
         <div data-hash="!/floor1" class="J_spSection"><div class="J_sp_inside"></div></div>
         <div data-hash="!/floor2" class="J_spSection"><div class="J_sp_inside"></div></div>
